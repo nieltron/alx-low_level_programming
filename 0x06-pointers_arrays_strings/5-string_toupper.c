@@ -4,6 +4,7 @@
  * @str: input variable
  * Return: pointer to dest
  */
+
 char *string_toupper(char *str)
 {
 	int i;
@@ -12,7 +13,7 @@ char *string_toupper(char *str)
 	{
 		if (str[i] >= 97 && str[i] <= 122)
 		{
-			str[i] = str[i] -32;
+			str[i] = str[i] - 32;
 		}
 	}
 	return (str);
