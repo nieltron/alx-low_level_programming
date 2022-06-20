@@ -8,16 +8,16 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int c;
-	int d = 0;
-	int e = 0;
+	int i;
+	int x = 0;
+	int y = 0;
 
-	for (c = 0; c < size; c++)
+	for (i = 0; i < size; i++)
 	{
-		d += a[c];
-		e += a[size - c - 1];
-		a += size;	
+		x += a[i];
+		y += a[size - i - 1];
+		a += size;
 	}
-	printf("%d, " d);
-	printf("%d\n", e);
+	printf("%d, ", x);
+	printf("%d\n", y);
 }
